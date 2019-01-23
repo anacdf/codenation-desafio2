@@ -77,9 +77,9 @@ public class Main {
 	// Quem são os 10 jogadores mais velhos (use como critério de desempate o campo `eur_wage`)?
 	// (utilize as colunas `full_name` e `birth_date`)
 	public List<String> q5() {
-		List<String> velhos = jogadores.stream().sorted(Comparator.comparing(Jogador::getBirth_date).thenComparing(Jogador::getEur_wage)).limit(10)
-		.map(Jogador::getFull_name).collect(Collectors.toList());
-
+		List<String> velhos = jogadores.stream().sorted(Comparator.comparing(Jogador::getBirth_date)
+												.thenComparing(Jogador::getEur_wage)).limit(10)
+												.map(Jogador::getFull_name).collect(Collectors.toList());
 		return velhos;
 	}
 
@@ -100,5 +100,4 @@ public class Main {
 		}
 		return quant;
 	}
-
 }
