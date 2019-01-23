@@ -11,7 +11,10 @@ public class Jogador {
     Double eur_wage; //17
     Double eur_release_clause; //18
 
-    public Jogador() {
+    public Jogador() {}
+
+    public Jogador(String name, String full_name, String club, Integer age,
+                   String birth_date, String nationality, Double eur_wage, Double eur_release_clause) {
         this.name = name;
         this.full_name = full_name;
         this.club = club;

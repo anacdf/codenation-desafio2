@@ -21,30 +21,21 @@ public class Main {
 				Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv"), Charset.forName("UTF-8"));
 				CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
 		) {
+			jogador = new Jogador();
+
 			for (CSVRecord csvRecord : csvParser) {
-				String name = csvRecord.get(1);
-				String full_name = csvRecord.get(2);
-				String club = csvRecord.get(3);
-				Integer age = Integer.valueOf(csvRecord.get(6));
-				String birth_date = csvRecord.get(8);
-				String nationality = csvRecord.get(14);
-				Double eur_wage = Double.valueOf(csvRecord.get(17));
+				jogador.setName(csvRecord.get(1));
+				jogador.setFull_name(csvRecord.get(2));
+				jogador.setClub(csvRecord.get(3));
+				jogador.setAge(Integer.valueOf(csvRecord.get(6)));
+				jogador.setBirth_date(csvRecord.get(8));
+				jogador.setNationality(csvRecord.get(14));
+				jogador.setEur_wage(Double.valueOf(csvRecord.get(17)));
 				String eur_clause_txt = csvRecord.get(18);
 				Double eur_release_clause=0.0;
 					if(eur_clause_txt.equals(null)||eur_clause_txt.equals("")){
 						eur_release_clause = 0.0;
-					} else eur_release_clause = Double.valueOf(csvRecord.get(18));
-
-				jogador = new Jogador();
-
-				jogador.setName(name);
-				jogador.setFull_name(full_name);
-				jogador.setClub(club);
-				jogador.setAge(age);
-				jogador.setBirth_date(birth_date);
-				jogador.setNationality(nationality);
-				jogador.setEur_wage(eur_wage);
-				jogador.setEur_release_clause(eur_release_clause);
+					} else jogador.setEur_release_clause(Double.valueOf(csvRecord.get(18)));
 
 				jogadores.add(jogador);
 			}
