@@ -21,9 +21,9 @@ public class Main {
 				Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv"), Charset.forName("UTF-8"));
 				CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
 		) {
-			jogador = new Jogador();
-
+		
 			for (CSVRecord csvRecord : csvParser) {
+				jogador = new Jogador();
 				jogador.setName(csvRecord.get(1));
 				jogador.setFull_name(csvRecord.get(2));
 				jogador.setClub(csvRecord.get(3));
@@ -31,11 +31,10 @@ public class Main {
 				jogador.setBirth_date(csvRecord.get(8));
 				jogador.setNationality(csvRecord.get(14));
 				jogador.setEur_wage(Double.valueOf(csvRecord.get(17)));
-				String eur_clause_txt = csvRecord.get(18);
-				Double eur_release_clause=0.0;
-					if(eur_clause_txt.equals(null)||eur_clause_txt.equals("")){
-						eur_release_clause = 0.0;
-					} else jogador.setEur_release_clause(Double.valueOf(csvRecord.get(18)));
+				String eur_release_clause = csvRecord.get(18);
+					if(eur_release_clause.isEmpty()){
+						jogador.setEur_release_clause(0.0);
+					} else jogador.setEur_release_clause(Double.valueOf(eur_release_clause));
 
 				jogadores.add(jogador);
 			}
@@ -66,7 +65,7 @@ public class Main {
 		return primeiros;
 	}
 
-	// Quem s„o os top 10 jogadores que possuem as maiores cl·usulas de rescis„o?
+	// Quem s√£o os top 10 jogadores que possuem as maiores cl√°usulas de rescis√£o?
 	// (utilize as colunas `full_name` e `eur_release_clause`)
 	public List<String> q4() {
 		List<String> clausulas = jogadores.stream().sorted(Comparator.comparing(Jogador::getEur_release_clause)
@@ -74,7 +73,7 @@ public class Main {
 		return clausulas;
 	}
 
-	// Quem s„o os 10 jogadores mais velhos (use como critÈrio de desempate o campo `eur_wage`)?
+	// Quem s√£o os 10 jogadores mais velhos (use como crit√©rio de desempate o campo `eur_wage`)?
 	// (utilize as colunas `full_name` e `birth_date`)
 	public List<String> q5() {
 		List<String> velhos = jogadores.stream().sorted(Comparator.comparing(Jogador::getBirth_date)
@@ -83,7 +82,7 @@ public class Main {
 		return velhos;
 	}
 
-	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves s„o as idades e os valores a contagem.
+	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves s√£o as idades e os valores a contagem.
 	// (utilize a coluna `age`)
 	public Map<Integer, Integer> q6() {
 		List<Integer> idades = new ArrayList<>();
