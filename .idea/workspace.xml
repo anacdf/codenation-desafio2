@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7431b208-36e2-4a1e-9953-72cfc3b299bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/challenge/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/challenge/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/challenge/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/challenge/MainTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -23,18 +26,19 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="4" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="10" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="15" />
+          <entry key="java" value="16" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -42,7 +46,7 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="16" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="1" />
         </counts>
@@ -51,14 +55,14 @@
         <counts>
           <entry key="csv" value="2" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="3303" />
+          <entry key="java" value="3388" />
           <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="3303" />
+          <entry key="JAVA" value="3388" />
           <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
@@ -69,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="-51">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +85,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="324">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Jogador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -400,10 +413,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/challenge/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data.csv" />
         <option value="$PROJECT_DIR$/src/main/java/challenge/Jogador.java" />
         <option value="$PROJECT_DIR$/src/main/java/challenge/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/challenge/MainTest.java" />
       </list>
     </option>
   </component>
@@ -449,8 +462,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -516,12 +527,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="encoding&#9;FILE&#9;file://C:/Users/ana.c.a.ferreira/codenation/java-3/.idea/encodings.xml" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548358627188" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548418112271" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -539,7 +552,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.java-3">
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration name="java-3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -570,7 +583,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.q4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.q1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-3_test" />
       <extension name="coverage">
         <pattern>
@@ -580,13 +593,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="challenge" />
       <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
-      <option name="METHOD_NAME" value="q4" />
+      <option name="METHOD_NAME" value="q1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.q5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.q2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-3_test" />
       <extension name="coverage">
         <pattern>
@@ -596,13 +609,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="challenge" />
       <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
-      <option name="METHOD_NAME" value="q5" />
+      <option name="METHOD_NAME" value="q2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.q6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.texto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-3_test" />
       <extension name="coverage">
         <pattern>
@@ -612,26 +625,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="challenge" />
       <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
-      <option name="METHOD_NAME" value="q6" />
+      <option name="METHOD_NAME" value="texto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainTest.q4" />
-      <item itemvalue="JUnit.MainTest.q5" />
-      <item itemvalue="JUnit.MainTest.q6" />
       <item itemvalue="JUnit.MainTest" />
       <item itemvalue="Gradle.java-3" />
+      <item itemvalue="JUnit.MainTest.q1" />
+      <item itemvalue="JUnit.MainTest.texto" />
+      <item itemvalue="JUnit.MainTest.q2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.java-3" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.q6" />
-        <item itemvalue="JUnit.MainTest.q5" />
-        <item itemvalue="JUnit.MainTest.q4" />
+        <item itemvalue="JUnit.MainTest.texto" />
+        <item itemvalue="JUnit.MainTest.q2" />
+        <item itemvalue="JUnit.MainTest.q1" />
+        <item itemvalue="Gradle.java-3" />
       </list>
     </recent_temporary>
   </component>
@@ -660,22 +673,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548272978423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1548417530311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548417530311</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.01.23 at 14h 55m 06s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.01.23 at 14h 59m 07s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.01.23 at 15h 00m 09s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.01.23 at 15h 03m 39s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest - 2019.01.23 at 15h 09m 29s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
@@ -694,6 +702,18 @@
     <history-entry file="MainTest - 2019.01.23 at 17h 20m 05s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_q1 - 2019.01.25 at 10h 00m 30s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_texto - 2019.01.25 at 10h 05m 22s.xml">
+      <configuration name="MainTest.texto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q2 - 2019.01.25 at 10h 05m 55s.xml">
+      <configuration name="MainTest.q2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_texto - 2019.01.25 at 10h 06m 00s.xml">
+      <configuration name="MainTest.texto" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -707,7 +727,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -716,7 +736,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.19639935" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.40589198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -747,7 +767,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main constructor update" />
     <MESSAGE value="jogador constructor update" />
-    <option name="LAST_COMMIT_MESSAGE" value="jogador constructor update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -820,23 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Jogador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -849,10 +853,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Jogador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="324">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
