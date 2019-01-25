@@ -23,12 +23,7 @@ public class Main {
 				Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv"), Charset.forName("UTF-8"));
 				CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
 		) {
-<<<<<<< HEAD
-			
 
-=======
-		
->>>>>>> 8e64f898cce9e55ffcbd27b4c221fc5025ab2f1c
 			for (CSVRecord csvRecord : csvParser) {
 				jogador = new Jogador();
 				jogador.setName(csvRecord.get(1));
