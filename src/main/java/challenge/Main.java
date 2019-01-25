@@ -4,8 +4,7 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -20,8 +19,10 @@ public class Main {
 
 	public Main(){
 		try (
-				Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv"), Charset.forName("UTF-8"));
-				CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("./data.csv"), "UTF-8"));
+			//Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv") {
+
+				CSVParser csvParser = new CSVParser(br, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
 		) {
 
 			for (CSVRecord csvRecord : csvParser) {
