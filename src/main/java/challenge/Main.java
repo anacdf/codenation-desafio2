@@ -12,16 +12,18 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 
+//codenation submit -c java-3
+
 public class Main {
 	 private List<Jogador> jogadores = new ArrayList<>();
-	 private Jogador jogador;
+	 private Jogador jogador = new Jogador();;
 
 	public Main(){
 		try (
 				Reader reader = Files.newBufferedReader(Paths.get("C:\\Users\\ana.c.a.ferreira\\codenation\\java-3\\src\\main\\resources\\data.csv"), Charset.forName("UTF-8"));
 				CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter(','));
 		) {
-			jogador = new Jogador();
+			
 
 			for (CSVRecord csvRecord : csvParser) {
 				jogador.setName(csvRecord.get(1));
